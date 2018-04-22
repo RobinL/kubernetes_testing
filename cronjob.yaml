@@ -1,7 +1,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: print_hello_world
+  name: print-hello-world
 spec:
   schedule: "*/1 * * * *"
   jobTemplate:
@@ -9,6 +9,6 @@ spec:
       template:
         spec:
           containers:
-          - name: print_hello_world
+          - name: print-hello-world
             image: robinlinacre/test_rpy
           restartPolicy: OnFailure
